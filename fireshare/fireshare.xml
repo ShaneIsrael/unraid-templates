@@ -3,7 +3,7 @@
   <Name>Fireshare</Name>
   <Repository>shaneisrael/fireshare</Repository>
   <Registry>https://hub.docker.com/r/shaneisrael/fireshare</Registry>
-  <Network>Bridge</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -36,7 +36,7 @@ This software is currently being actively developed on. &#xD;
 You can change the default password by setting a value for the variable ADMIN_PASSWORD. If you forget the admin password, change the ADMIN_PASSWORD to something else and restart the container.&#xD;
 </Description>
   <Networking>
-    <Mode>Bridge</Mode>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>8080</HostPort>
