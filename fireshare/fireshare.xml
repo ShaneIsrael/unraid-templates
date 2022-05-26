@@ -18,7 +18,7 @@ This software is currently being actively developed on. As of this moment, only 
 You can change the default password by setting a value for the variable ADMIN_PASSWORD. If you forget the admin password, change the ADMIN_PASSWORD to something else and restart the container.&#xD;
 </Overview>
   <Category>Other: MediaServer:Video Status:Beta</Category>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/ShaneIsrael/fireshare/main/app/client/src/assets/logo.png</Icon>
   <ExtraParams></ExtraParams>
