@@ -25,8 +25,8 @@ You can change the default password by setting a value for the variable ADMIN_PA
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1653520201</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>If you like Fireshare and want to support its development please consider donating. Thank you!</DonateLink>
+  <DonateLink>https://www.paypal.com/paypalme/shaneisrael</DonateLink>
   <Description>Fireshare allows you to easily share your media whether that be game clips, screen records, or movies through a unique publically accessible link. &#xD;
 &#xD;
 default username/password: **admin / admin**&#xD;
