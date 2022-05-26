@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/124036-support-fireshare/</Support>
   <Project>https://github.com/ShaneIsrael/fireshare</Project>
   <Overview>Fireshare allows you to easily share your media whether that be game clips, screen records, or movies through a unique publically accessible link. &#xD;
 &#xD;
