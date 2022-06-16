@@ -15,7 +15,7 @@ default username/password: **admin / admin**&#xD;
 &#xD;
 This software is currently being actively developed on. If you have feature ideas or suggestions please visit the GitHub project.&#xD;
 &#xD;
-Currently Supported Filetypes: **mp4, mov, webm**&#xD;
+Currently Supported File Types: **mp4, mov, webm**&#xD;
 &#xD;
 You can change the default password by setting a value for the variable ADMIN_PASSWORD. If you forget the admin password, change the ADMIN_PASSWORD to something else and restart the container.&#xD;
 </Overview>
