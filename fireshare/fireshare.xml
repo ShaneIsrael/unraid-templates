@@ -13,11 +13,13 @@
 &#xD;
 default username/password: **admin / admin**&#xD;
 &#xD;
-This software is currently being actively developed on. As of this moment, **only .mp4 files are supported**. Support for other file types is in the works.&#xD;
+This software is currently being actively developed on. If you have feature ideas or suggestions please visit the GitHub project.&#xD;
+&#xD;
+Currently Supported File Types: **mp4, mov, webm**&#xD;
 &#xD;
 You can change the default password by setting a value for the variable ADMIN_PASSWORD. If you forget the admin password, change the ADMIN_PASSWORD to something else and restart the container.&#xD;
 </Overview>
-  <Category>Other: MediaServer:Video Status:Beta</Category>
+  <Category>Other: MediaServer:Video</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/ShaneIsrael/fireshare/main/app/client/src/assets/logo.png</Icon>
@@ -94,7 +96,7 @@ You can change the default password by setting a value for the variable ADMIN_PA
   <Labels/>
   <Config Name="Admin Password" Target="ADMIN_PASSWORD" Default="admin" Mode="" Description="The admin account password" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
   <Config Name="Secret Key" Target="SECRET_KEY" Default="" Mode="" Description="Replace with some random string. Without it, you'll be forced to login every restart of the app." Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Minutes Between Scans" Target="MINUTES_BETWEEN_VIDEO_SCANS" Default="5" Mode="" Description="The minutes to pause before starting a new video scan" Type="Variable" Display="always" Required="false" Mask="false">5</Config>
+  <Config Name="Video Scan Interval" Target="MINUTES_BETWEEN_VIDEO_SCANS" Default="5" Mode="" Description="How often in minutes Fireshare will scan for new videos" Type="Variable" Display="always" Required="false" Mask="false">5</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
   <Config Name="Appdata" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/fireshare</Config>
