@@ -35,8 +35,6 @@ default username/password: **admin / admin**&#xD;
 &#xD;
 This software is currently being actively developed on. &#xD;
 &#xD;
-NOTE: Autoscanning of media is not yet in place, to scan your media in the web ui there is a "Scan" button you can press. This button is located under the Admin profile avatar when signed in. Click the button, depending on your library size the scan may take a little bit. Refresh the page to see changes.&#xD;
-&#xD;
 You can change the default password by setting a value for the variable ADMIN_PASSWORD. If you forget the admin password, change the ADMIN_PASSWORD to something else and restart the container.&#xD;
 </Description>
   <Networking>
