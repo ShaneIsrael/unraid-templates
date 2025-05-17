@@ -37,9 +37,10 @@
   <DateInstalled>1747459593</DateInstalled>
   <DonateText>Only donate if you are able and find the app useful. Thanks!</DonateText>
   <DonateLink>https://paypal.me/ShaneIsrael</DonateLink>
-  <Requires>- PostgreSQL database&#xD;
-- Google Maps API Key&#xD;
-- SMTP accessible email&#xD;
+  <Requires>
+    &#x2022; PostgreSQL database&#xD;
+    &#x2022; Google Maps API Key&#xD;
+    &#x2022; SMTP accessible email&#xD;
 &#xD;
 You'll need a Google Maps API key with access to the Google Maps Javascript SDK: &#xD;
 https://developers.google.com/maps/documentation/javascript/get-api-key&#xD;
