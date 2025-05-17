@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Snapsmaps</Name>
+  <Repository>shaneisrael/snapsmaps:latest</Repository>
+  <Registry>https://hub.docker.com/r/shaneisrael/snapsmaps</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/ShaneIsrael/Snapsmaps</Project>
+  <Overview>Your own self-hostable social media application. Easily share photos with a map pin to friends and family.&#xD;
+&#xD;
+-- Features&#xD;
+ &#x2022; Fully optimized for mobile devices&#xD;
+ &#x2022; Social media profile functionality&#xD;
+ &#x2022; Basic notification system&#xD;
+ &#x2022; Photo collections&#xD;
+ &#x2022; User follow system&#xD;
+ &#x2022; Comment functionality&#xD;
+ &#x2022; Secure, email-verified account registration&#xD;
+ &#x2022; NSFW submission tagging&#xD;
+ &#x2022; Admin tooling&#xD;
+ &#x2022; Limited guest access (no account required)&#xD;
+ &#x2022; Seamless post and collection sharing with OpenGraph metadata integration&#xD;
+&#xD;
+&#xD;
+&#xD;
+</Overview>
+  <Category>Other: MediaApp:Photos MediaApp:Other</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/ShaneIsrael/unraid-templates/master/snapsmaps/snapsmaps.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/ShaneIsrael/Snapsmaps/refs/heads/main/assets/logo_square.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1747459593</DateInstalled>
+  <DonateText>Only donate if you are able and find the app useful. Thanks!</DonateText>
+  <DonateLink>https://paypal.me/ShaneIsrael</DonateLink>
+  <Requires>- PostgreSQL database&#xD;
+- Google Maps API Key&#xD;
+- SMTP accessible email&#xD;
+&#xD;
+You'll need a Google Maps API key with access to the Google Maps Javascript SDK: &#xD;
+https://developers.google.com/maps/documentation/javascript/get-api-key&#xD;
+&#xD;
+An SMTP enabled email for user creation and verification emails</Requires>
+  <Config Name="Appdata" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/snapsmaps</Config>
+  <Config Name="Content" Target="/content/images" Default="" Mode="rw" Description="This is where Snapsmaps will store user content" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/snapsmaps/content/images</Config>
+  <Config Name="Web" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8888</Config>
+  <Config Name="GOOGLE_MAPS_API_KEY" Target="GOOGLE_MAPS_API_KEY" Default="" Mode="" Description="You'll need to create a google maps api key that has access to the Google Maps Javascript SDK.&#13;&#10;&#13;&#10;https://developers.google.com/maps/documentation/javascript/get-api-key" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="replace-with-random-generated-string" Mode="" Description="Replace with any randomly generated string. This is used in user session creation. Changing it will invalidate any active sessions." Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="DOMAIN" Target="DOMAIN" Default="http://[IP]:[PORT:80]" Mode="" Description="The primary hosting domain. e.x https://mysnapsmapsdomain.com" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="ALLOWED_DOMAINS" Target="ALLOWED_DOMAINS" Default="http://[IP]:[PORT:80]" Mode="" Description="Also known as cors domains. You do not need to add the DOMAIN set domain to this list. " Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="ADMINS" Target="ADMINS" Default="" Mode="" Description="Comma seperated list of account admins emails. Your account email should be listed." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SECURE_COOKIES" Target="SECURE_COOKIES" Default="false" Mode="" Description="If set to true, the site must be access from https. Set to false if accessing from http. If accessing from http then log in sessions will not be created. tl;dr If you enable this, your users must access it from https in order to log in. " Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+  <Config Name="Max Photo Upload Size (MB)" Target="MAX_UPLOAD_SIZE_IN_MB" Default="10" Mode="" Description="The maximum allowed upload size for photos in megabytes" Type="Variable" Display="always" Required="false" Mask="false">10</Config>
+  <Config Name="PostgreSQL Username" Target="DB_USERNAME" Default="" Mode="" Description="Your PostgreSQL user for Snapsmaps" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PostgreSQL Password" Target="DB_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PostgreSQL Database Name" Target="DB_NAME" Default="snapsmaps" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">snapsmaps</Config>
+  <Config Name="PostgreSQL Database Host" Target="DB_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PostgreSQL Database Port" Target="DB_PORT" Default="5432" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SMTP Email" Target="SMTP_EMAIL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SMTP User" Target="SMTP_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SMTP Password" Target="SMTP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SMTP Host" Target="SMTP_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SMTP Port" Target="SMTP_PORT" Default="465" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Manifest Start URL" Target="START_URL" Default="https://mydomain.tld" Mode="" Description="The site manifest start_url. Generally this should be your domain. e.x https://mydomain.tld" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Manifest Scope" Target="SCOPE" Default="https://mydomain.tld" Mode="" Description="The site manifest scope." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Manifest Site name" Target="SITE_NAME" Default="Snapsmaps" Mode="" Description="Needed for the manifiest and for opengraph metadata." Type="Variable" Display="always" Required="false" Mask="false">Snapsmaps</Config>
+  <Config Name="Manifest Short Site Name" Target="SITE_SHORT_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Snapsmaps</Config>
+  <Config Name="Manifest ID" Target="MANIFEST_ID" Default="" Mode="" Description="Put some randomly genearted string here that is unique" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Manifest Site Description" Target="DESCRIPTION" Default="Easily share photos with a map pin to friends and family." Mode="" Description="Needed for the manifiest and for opengraph metadata." Type="Variable" Display="always" Required="false" Mask="false">Easily share photos with a map pin to friends and family.</Config>
+  <Config Name="NODE_ENV" Target="NODE_ENV" Default="production" Mode="" Description="Do not change" Type="Variable" Display="always" Required="false" Mask="false">production</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <TailscaleStateDir/>
+</Container>
