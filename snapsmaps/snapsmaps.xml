@@ -14,6 +14,7 @@
 -- Features&#xD;
  &#x2022; Fully optimized for mobile devices&#xD;
  &#x2022; Social media profile functionality&#xD;
+ &#x2022; Photo location markers via Open Street Map&#xD;
  &#x2022; Basic notification system&#xD;
  &#x2022; Photo collections&#xD;
  &#x2022; User follow system&#xD;
@@ -39,17 +40,12 @@
   <DonateLink>https://paypal.me/ShaneIsrael</DonateLink>
   <Requires>
     &#x2022; PostgreSQL database&#xD;
-    &#x2022; Google Maps API Key&#xD;
     &#x2022; SMTP accessible email&#xD;
-&#xD;
-You'll need a Google Maps API key with access to the Google Maps Javascript SDK: &#xD;
-https://developers.google.com/maps/documentation/javascript/get-api-key&#xD;
 &#xD;
 An SMTP enabled email for user creation and verification emails</Requires>
   <Config Name="Appdata" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/snapsmaps</Config>
   <Config Name="Content" Target="/content/images" Default="" Mode="rw" Description="This is where Snapsmaps will store user content" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/snapsmaps/content/images</Config>
   <Config Name="Web" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8888</Config>
-  <Config Name="GOOGLE_MAPS_API_KEY" Target="GOOGLE_MAPS_API_KEY" Default="" Mode="" Description="You'll need to create a google maps api key that has access to the Google Maps Javascript SDK.&#13;&#10;&#13;&#10;https://developers.google.com/maps/documentation/javascript/get-api-key" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="replace-with-random-generated-string" Mode="" Description="Replace with any randomly generated string. This is used in user session creation. Changing it will invalidate any active sessions." Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="DOMAIN" Target="DOMAIN" Default="http://[IP]:[PORT:80]" Mode="" Description="The primary hosting domain. e.x https://mysnapsmapsdomain.com" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="ALLOWED_DOMAINS" Target="ALLOWED_DOMAINS" Default="http://[IP]:[PORT:80]" Mode="" Description="Also known as cors domains. You do not need to add the DOMAIN set domain to this list. " Type="Variable" Display="always" Required="true" Mask="false"></Config>
