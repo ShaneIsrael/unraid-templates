@@ -62,6 +62,7 @@ An SMTP enabled email for user creation and verification emails</Requires>
   <Config Name="SMTP Password" Target="SMTP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="SMTP Host" Target="SMTP_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SMTP Port" Target="SMTP_PORT" Default="465" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SMTP_SECURITY" Target="SMTP_SECURITY" Default="ssl" Mode="" Description="Can be " Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Manifest Start URL" Target="START_URL" Default="https://mydomain.tld" Mode="" Description="The site manifest start_url. Generally this should be your domain. e.x https://mydomain.tld" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Manifest Scope" Target="SCOPE" Default="https://mydomain.tld" Mode="" Description="The site manifest scope." Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Manifest Site name" Target="SITE_NAME" Default="Snapsmaps" Mode="" Description="Needed for the manifiest and for opengraph metadata." Type="Variable" Display="always" Required="false" Mask="false">Snapsmaps</Config>
