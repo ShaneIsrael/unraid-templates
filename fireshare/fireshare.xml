@@ -23,7 +23,7 @@ You can change the default password by setting a value for the variable ADMIN_PA
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/ShaneIsrael/fireshare/main/app/client/src/assets/logo.png</Icon>
-  <ExtraParams></ExtraParams>
+  <ExtraParams>--gpus=all</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1653520201</DateInstalled>
