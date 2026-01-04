@@ -96,6 +96,11 @@ You can change the default password by setting a value for the variable ADMIN_PA
       <Mode/>
     </Variable>
     <Variable>
+      <Value/>
+      <Name>STEAMGRIDDB_API_KEY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>false</Value>
       <Name>ENABLE_TRANSCODING</Name>
       <Mode/>
@@ -128,6 +133,7 @@ You can change the default password by setting a value for the variable ADMIN_PA
   <Config Name="Secret Key" Target="SECRET_KEY" Default="" Mode="" Description="Replace with some random string. Without it, you'll be forced to login every restart of the app." Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="Video Scan Interval" Target="MINUTES_BETWEEN_VIDEO_SCANS" Default="5" Mode="" Description="How often in minutes Fireshare will scan for new videos" Type="Variable" Display="always" Required="false" Mask="false">5</Config>
   <Config Name="Thumbnail Location" Target="THUMBNAIL_VIDEO_LOCATION" Default="" Mode="" Description="The location in the video thumbnails are generated. A value between 0-100 where 50 would be the frame in the middle of the video file and 0 would be the first frame of the video." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="SteamGridDB Api Key" Target="STEAMGRIDDB_API_KEY" Default="" Mode="" Description="Required for and enables game categorization." Type="Variable" Display="always" Required="false" Mask="true"></Config>  
   <Config Name="Enable Transcoding" Target="ENABLE_TRANSCODING" Default="false" Mode="" Description="Allow Fireshare to transcode your videos." Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="GPU Transcoding" Target="TRANSCODE_GPU" Default="false" Mode="" Description="If transcoding enabled, use nvidia gpu transcoding if available." Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="Nvidia Driver Capabilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
