@@ -19,7 +19,7 @@ Currently Supported File Types: **mp4, mov, webm**&#xD;
 &#xD;
 You can change the default password by setting a value for the variable ADMIN_PASSWORD. If you forget the admin password, change the ADMIN_PASSWORD to something else and restart the container.&#xD;
 </Overview>
-  <Category>Other: MediaServer:Video</Category>
+  <Category>MediaServer:Video MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/ShaneIsrael/fireshare/main/app/client/src/assets/logo_square.png</Icon>
