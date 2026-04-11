@@ -37,7 +37,7 @@
   <CPUset/>
   <DateInstalled>1747459593</DateInstalled>
   <DonateText>Only donate if you are able and find the app useful. Thanks!</DonateText>
-  <DonateLink>https://paypal.me/ShaneIsrael</DonateLink>
+  <DonateLink>https://buymeacoffee.com/shaneisrael</DonateLink>
   <Requires>
     &#x2022; PostgreSQL database&#xD;
     &#x2022; SMTP accessible email&#xD;
