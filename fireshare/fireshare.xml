@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/124036-support-fireshare/</Support>
-  <Project>https://github.com/ShaneIsrael/fireshare</Project>
+  <Project>https://github.com/fireshare-app/fireshare</Project>
   <Overview>Fireshare allows you to easily share your media whether that be game clips, screen records, or movies through a unique publically accessible link. &#xD;
 &#xD;
 default username/password: **admin / admin**&#xD;
@@ -24,7 +24,7 @@ You can change the default password by setting a value for the variable ADMIN_PA
   <Category>MediaServer:Video MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/ShaneIsrael/fireshare/main/app/client/src/assets/logo_square.png</Icon>
+  <Icon>https://raw.githubusercontent.com/fireshare-app/fireshare/main/app/client/src/assets/logo_square.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
